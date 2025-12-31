@@ -1,0 +1,24 @@
+{
+  "name": "pastelite",
+  "version": "1.0.0",
+  "description": "Production-ready Pastebin-Lite application with Express and MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "vercel-build": "echo 'Build complete'"
+  },
+  "keywords": ["pastebin", "express", "mongodb", "paste"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "express-validator": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
