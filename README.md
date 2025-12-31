@@ -11,14 +11,7 @@ A production-ready Pastebin service built with Node.js, Express, and MongoDB. Su
 - **MongoDB Persistence**: All pastes are stored in MongoDB (no in-memory storage)
 - **Vercel-Ready**: Deploy to Vercel with zero configuration
 
-## 🛠 Tech Stack
 
-- **Runtime**: Node.js (>=18)
-- **Framework**: Express.js
-- **Database**: MongoDB (via Mongoose ODM)
-- **Validation**: express-validator
-- **Security**: Helmet
-- **Deployment**: Vercel
 
 ## 📦 MongoDB Persistence
 
@@ -260,45 +253,7 @@ Helmet middleware adds security headers:
 
 ---
 
-## 🚀 Deployment
 
-### Deploy to Vercel
-
-1. **Install Vercel CLI**:
-```bash
-npm i -g vercel
-```
-
-2. **Deploy**:
-```bash
-vercel
-```
-
-3. **Set environment variables** in Vercel dashboard:
-   - `MONGODB_URI`: Your MongoDB Atlas connection string
-   - `BASE_URL`: Your Vercel app URL (e.g., `https://your-app.vercel.app`)
-   - `TEST_MODE`: `0` (disable for production)
-   - `NODE_ENV`: `production`
-
-4. **Deploy to production**:
-```bash
-vercel --prod
-```
-
-### MongoDB Atlas Setup
-
-1. Create free account at [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
-2. Create a cluster
-3. Create database user
-4. Whitelist IP addresses (or allow from anywhere for development)
-5. Get connection string and add to `.env`
-
-Example connection string:
-```
-mongodb+srv://username:password@cluster.mongodb.net/pastelite?retryWrites=true&w=majority
-```
-
----
 
 ## 🧰 Project Structure
 
@@ -391,21 +346,3 @@ http://localhost:3000/p/507f1f77bcf86cd799439011
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please ensure:
-- All tests pass
-- Code follows existing style
-- Security best practices are maintained
-
----
-
-## 📄 License
-
-MIT License - feel free to use this project for any purpose.
-
----
-
-## 🙏 Acknowledgments
-
-Built with modern Node.js best practices for production deployment.
